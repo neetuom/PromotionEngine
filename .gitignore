@@ -2,9 +2,9 @@
 
 ### Java ###
 *.class
-!Cart.java
-!TestCart.java
-!
+Cart.java
+TestCart.java
+
 ##### Mac OS ######
 .DS_Store
 
