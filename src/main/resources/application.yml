@@ -1,0 +1,43 @@
+
+# MySql DB Credential
+spring:
+  application:
+    name: PromotionEngine
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://mysql-dev:3306/golangdb?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
+    #url: jdbc:mysql://mysql-dev:3306/golangdb?allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/promotion
+    username: root
+    #password: password
+    password: Arshita@10
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+    show-sql: true
+    open-in-view: false
+
+# Server Port
+server:
+  port: 8085
+
+# Logging
+logging:
+  file: /logs/application.log
+  pattern:
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    com.online.marketplace: info
+
+# custom path for swagger-ui
+springdoc:
+  api-docs:
+    path: /promotion-docs
+
+
+# http://localhost:8085/promotion-docs/
+
+# http://localhost:8085/swagger-ui.html
+
