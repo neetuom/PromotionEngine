@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://localhost:3306/promotion
     username: root
     #password: password
-    password: Arshita@10
+    password: *****ta@1*
   jpa:
     hibernate:
       ddl-auto: update
